@@ -24,8 +24,8 @@ mongoose
 app.use("/api/users", router); //userRouter
 app.get("/", (req, res) => {
   res.send({
-    activestatus: "true",
-    message: "Welcome to CRUD API",
+    activestatus: true,
+    error: false,
   });
 });
 // Server started
