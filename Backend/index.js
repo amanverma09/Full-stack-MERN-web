@@ -23,7 +23,10 @@ mongoose
 // Routes
 app.use("/api/users", router); //userRouter
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send({
+    activestatus: "true",
+    message: "Welcome to CRUD API",
+  });
 });
 // Server started
 app.listen(PORT, () => {
