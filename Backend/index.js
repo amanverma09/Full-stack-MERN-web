@@ -22,7 +22,9 @@ mongoose
 
 // Routes
 app.use("/api/users", router); //userRouter
-
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
 // Server started
 app.listen(PORT, () => {
   console.log(`Server is running on port http://localhost:${PORT}`);
