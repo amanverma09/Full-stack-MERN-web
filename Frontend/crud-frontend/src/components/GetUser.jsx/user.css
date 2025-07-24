@@ -1,0 +1,81 @@
+.createtable {
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #172848;
+  padding: 20px;
+  max-width: 1200px;
+  color: #ffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.add-btn {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 15px 10px;
+  text-align: center;
+  border-bottom: 2px solid #ffff;
+  font-weight: bold;
+}
+
+th {
+  background-color: #2196f3;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #294265;
+}
+
+tr:nth-child(odd) {
+  background-color: #172848;
+}
+tr:hover {
+  background-color: #37465a;
+}
+.update-btn,
+.delete-btn {
+  margin: 0 5px;
+  padding: 6px 12px;
+  font-weight: bold;
+  font-size: larger;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s, background-color 0.3s;
+}
+.delete-btn {
+  background: none;
+}
+
+.loader {
+  text-align: center;
+  color: #555;
+  margin-top: 20px;
+}
