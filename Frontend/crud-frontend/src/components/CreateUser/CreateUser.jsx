@@ -13,7 +13,7 @@ const CreateUser = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // console.log(user);
-    const sendData = await axios.post("http://localhost:3000/api/users/", user);
+    const sendData = await axios.post("https://front-end-wine-xi.vercel.app/api/users", user);
     // console.log(sendData);
     sendData.data && alert("User Created");
     navigate("/");

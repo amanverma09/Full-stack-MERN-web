@@ -11,7 +11,9 @@ const GetAllUser = () => {
 
   const fetchUser = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/users/");
+      const response = await axios.get(
+        "https://front-end-wine-xi.vercel.app/api/users"
+      );
       setUsers(response.data);
       setLoading(false);
     } catch (error) {
@@ -27,7 +29,9 @@ const GetAllUser = () => {
     );
     if (confirmDelete) {
       try {
-        await axios.delete(`http://localhost:3000/api/users/${id}`);
+        await axios.delete(
+          `https://front-end-wine-xi.vercel.app/api/users/${id}`
+        );
         fetchUser();
       } catch (error) {
         console.error("Error deleting user:", error);

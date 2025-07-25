@@ -14,7 +14,9 @@ const UpdateUser = () => {
 
   const getSingleUser = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/api/users/${id}`);
+      const response = await axios.get(
+        `https://front-end-wine-xi.vercel.app/api/users/${id}`
+      );
       setuser(response.data);
     } catch (error) {
       console.error("Error fetching user:", error);
@@ -29,7 +31,7 @@ const UpdateUser = () => {
     e.preventDefault();
     try {
       const sendData = await axios.put(
-        `http://localhost:3000/api/users/${id}`,
+        `https://front-end-wine-xi.vercel.app/api/users/${id}`,
         user
       );
       if (sendData.data) {

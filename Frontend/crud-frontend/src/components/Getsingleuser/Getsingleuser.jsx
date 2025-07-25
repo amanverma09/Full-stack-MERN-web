@@ -9,7 +9,7 @@ const Getsingleuser = () => {
 
   const fetchUser = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/api/users/${id}`);
+      const response = await axios.get(`https://front-end-wine-xi.vercel.app/api/users/${id}`);
       setUser([response.data]);
     } catch (error) {
       console.log("User not found", error);
