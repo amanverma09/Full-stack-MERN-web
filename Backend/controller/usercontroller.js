@@ -26,7 +26,8 @@ export const getAllUser = async (req, res) => {
 // GET SINGLE USER FIND
 export const getSingleuser = async (req, res) => {
   try {
-    const user = await User.findById(req.params.id);
+    const { id } = req.params;
+    const user = await User.findById(id);
     if (!user) return res.status(404).send({ message: "User not found" });
     res.send(user);
   } catch (error) {

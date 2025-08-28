@@ -24,8 +24,7 @@ mongoose
 app.use("/api/users", router); //userRouter
 app.get("/", (req, res) => {
   res.send({
-    activestatus: true,
-    error: false,
+    message: "Hello World",
   });
 });
 // Server started
